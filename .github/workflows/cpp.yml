@@ -15,3 +15,9 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-output
+        path: ./main
