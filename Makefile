@@ -1,10 +1,10 @@
 
 
 all:
-	echo "hello"
+	clang++ main.cpp -o main
 
 check:
-	echo "checked"
+	file ./main
 
 distcheck:
 	echo "distchecked"
